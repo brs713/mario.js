@@ -27,18 +27,24 @@ function drawPyramid(height) {
 
         // TODO 1
         // create a text element with the string of characters
+        var stringElem = document.createTextNode(rowStr);
 
 
         // TODO 2
         // create a <p> element with the text inside
+        var p = document.createElement("p");
 
 
         // TODO 3
         // insert the text element as a child of the paragraph element
+        p.appendChild(stringElem);
 
 
         // TODO 4
         // insert the paragraph element as a child of the <body>
+        var pyramid = document.getElementById("pyramid");
+        // var pyramid = document.querySelector("#some_id .class div p");
+        pyramid.appendChild(p);
 
 
         // you can delete this
